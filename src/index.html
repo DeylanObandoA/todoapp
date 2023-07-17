@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>TO DO PROYECT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Tareas Por Hacer</h1>
+
+        <div class="main-div">
+            <div class="left-div divh1">
+                <form action="" onsubmit="return false;">
+                    <div class="container-input">
+                        <input type="text" placeholder="Search" name="text" class="input" id="search" autocomplete="off">
+                        <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+
+                        <!-- <input type="text" >
+                        <button id="search-btn">
+                            
+                        </button> -->
+                    </div>
+                </form>
+                <form action="" method="post" id="formulario" onsubmit="return false;">
+                    <div class="input-container">
+                        <input required="" id="input1" type="text">
+                        <label class="label" for="input">Enter Text</label>
+                        <div class="underline"></div>
+                        <div class="sideline"></div>
+                        <div class="upperline"></div>
+                        <div class="line"></div>
+
+                    </div>
+
+                    <span id="mostrar-texto"></span>
+                    <button class="btn">
+                        <span>AGREGAR
+                        </span>
+                    </button>
+                </form>
+            </div>
+            <div class="right-div">
+                <p id="textiño">Tareas <br>Chekeds</p>
+                <div class="Circles">
+                    <div class="DivValor  text-center">
+                        <p id="contedorCero">
+                            0
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="div-contador">
+            <center>
+                <div class="caja-para-texto">
+                    <div class="task">
+
+
+
+                    
+                    
+                    </div>
+                    <div class="li-container">
+                        <ul id="ulValor">
+                            <!-- <label class="checkContainer">
+                                <input type="checkbox" checked="checked">
+                                <div class="checkmark"></div>
+                            </label> -->
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="noTareas">
+                            <p id="noHayTareas">No hay tareas</p>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+</body>
+<script type="module" src="./index.js"></script>
+<script type="module" src="./Exporst.js"></script>
+
+</html>
